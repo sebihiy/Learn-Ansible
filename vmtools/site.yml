@@ -6,4 +6,4 @@
   become_method: sudo
 
   roles:
-    - { when: ansible_virtualization_type == 'VMware' }
+    - { role: ruzickap.vmwaretools, when: ansible_virtualization_type == 'VMware' }
