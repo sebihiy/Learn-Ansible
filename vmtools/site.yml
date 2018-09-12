@@ -6,4 +6,4 @@
   become_method: sudo
 
   roles:
-    - { role: peru.vmwaretools, when: ansible_virtualization_type == 'VMware' }
+    - { when: ansible_virtualization_type == 'VMware' }
