@@ -1,0 +1,9 @@
+---
+
+- hosts: ansible.ebs.local
+  gather_facts: true
+  become: yes
+  become_method: sudo
+
+  roles:
+    - { role: peru.vmwaretools, when: ansible_virtualization_type == 'VMware' }
