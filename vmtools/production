@@ -1,9 +1,9 @@
 ansible_host=ansible.ebs.local
 
-[jenkins]
+[vmtools]
 ansible.ebs.local
 
-[jenkins:vars]
+[vmtools:vars]
 ansible_connection=ssh
 #ansible_user=ainsible
 #ansible_private_key_file=~/.ssh/id_rsa
